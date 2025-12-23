@@ -798,7 +798,7 @@ MIT License
 ## 🙏 支援
 
 需要幫助? 
-- [GitHub Issues](https://github.com/your-username/n8n-nodes-excel-crud/issues)
+- [GitHub Issues](https://github.com/code4Copilot/n8n-nodes-excel-crud/issues)
 - [n8n Community](https://community.n8n.io/)
 
 ---

@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-excel-crud",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "n8n node for Excel file CRUD operations",
   "keywords": [
     "n8n-community-node-package",
@@ -10,14 +10,14 @@
     "spreadsheet"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/your-username/n8n-nodes-excel-crud",
+  "homepage": "https://github.com/code4Copilot/n8n-nodes-excel-crud",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Hueyan Chen",
+    "email": "hueyan.chen@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/n8n-nodes-excel-crud.git"
+    "url": "git+https://github.com/code4Copilot/n8n-nodes-excel-crud.git"
   },
   "main": "index.js",
   "scripts": {
