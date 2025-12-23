@@ -13,7 +13,8 @@ module.exports = {
 		'plugin:n8n-nodes-base/community',
 	],
 	rules: {
-		// 可以在這裡添加自定義規則
+		'@typescript-eslint/no-explicit-any': 'warn',
+		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 	},
-	ignorePatterns: ['dist/', 'node_modules/', '*.js'],
+	ignorePatterns: ['dist/', 'node_modules/', '*.js', '**/*.test.ts'],
 };

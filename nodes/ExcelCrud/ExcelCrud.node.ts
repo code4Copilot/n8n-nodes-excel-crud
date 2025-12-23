@@ -74,7 +74,7 @@ export class ExcelCrud implements INodeType {
 						}
 						
 						const columns: INodePropertyOptions[] = [];
-						worksheet.getRow(1).eachCell((cell, colNumber) => {
+					worksheet.getRow(1).eachCell((cell, _colNumber) => {
 							const columnName = cell.value as string;
 							if (columnName) {
 								columns.push({
@@ -505,7 +505,7 @@ export class ExcelCrud implements INodeType {
 		const row = worksheet.getRow(rowNumber);
 		worksheet.getRow(1).eachCell((cell, colNumber) => {
 			const h = cell.value as string;
-			if (updatedData.hasOwnProperty(h)) row.getCell(colNumber).value = updatedData[h];
+		if (Object.prototype.hasOwnProperty.call(updatedData, h)) row.getCell(colNumber).value = updatedData[h];
 		});
 		row.commit();
 		return { success: true, operation: 'updateRow', rowNumber };
@@ -537,7 +537,7 @@ export class ExcelCrud implements INodeType {
 		worksheet.eachRow((row, rowNum) => {
 			if (rowNum === 1) return;
 			const cellVal = String(row.getCell(colIndex).value || '');
-			let match = type === 'exact' ? cellVal === val : type === 'contains' ? cellVal.includes(val) : cellVal.startsWith(val);
+		const match = type === 'exact' ? cellVal === val : type === 'contains' ? cellVal.includes(val) : cellVal.startsWith(val);
 			if (match) {
 				rowNumbers.push(rowNum);
 				if (!returnRowNumbers) {
