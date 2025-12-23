@@ -1,0 +1,16 @@
+{
+  "node": "n8n-nodes-base.excelCrud",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Core Nodes"],
+  "resources": {
+    "credentialDocumentation": [],
+    "primaryDocumentation": [
+      {
+        "url": "https://github.com/your-username/n8n-nodes-excel-crud"
+      }
+    ],
+    "generic": []
+  },
+  "alias": ["Excel", "Spreadsheet", "XLSX", "XLS"]
+}
